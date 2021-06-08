@@ -93,7 +93,20 @@ def show_profiles():
     assert not donkey
 
 
+def search_email(email: str):
+    """Iterate through all profiles and look for an encrypted email."""
+    session = SessionLocal()
+    for profile in session.query(Profile).all():
+        # NOTE: This works because sqlalchemy is decrypting the `Profile` field(s).
+        if profile.email == email:
+            print(f"user {profile.username} has the email of {email}")
+            break
+    else:
+        print(f"No user found with an email of {email}")
+
+
 if __name__ == "__main__":
     generate_keys()
     # init_db()
     # show_profiles()
+    # search_email("kong@nintendo.com")
