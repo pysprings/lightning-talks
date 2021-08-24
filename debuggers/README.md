@@ -9,7 +9,7 @@ export PYTHONBREAKPOINT=pdb.set_trace
 
 You can also start your script in the debugging by calling the module directly:
 ```
-python3 -m pdb debuggers.py
+python3 -m pdb src/debuggers.py
 ```
 
 This allows you to debug code and you don't have to insert `breakpoint()` anywhere.
