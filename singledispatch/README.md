@@ -1,6 +1,8 @@
 # singledispatch
 
-`singledispatch` is Python's version of function "overloading" using [generic functions](https://docs.python.org/3/glossary.html#term-generic-function) (multiple functions implementing the same operation for different types). 
+`singledispatch` is Python's version of function "overloading" using [generic functions](https://docs.python.org/3/glossary.html#term-generic-function) (multiple functions implementing the same operation for different types).
+
+The main difference between something like overloading in C++/Java is the `single` in `singledispatch`.  Python will only use the first argument to dispatch to the appropriate function!
 
 https://docs.python.org/3/library/functools.html#functools.singledispatch
 
