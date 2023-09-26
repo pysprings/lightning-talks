@@ -1,3 +1,7 @@
+robotframework/**.xml
+robotframework/**.html
+
+
 .direnv/
 .vscode/
 # Byte-compiled / optimized / DLL files
