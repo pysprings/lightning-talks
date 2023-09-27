@@ -7,5 +7,5 @@ class TestLibrary:
         return var1 == var2
 
     def this_will_always_return_false(self) -> bool:
-        BuiltIn().log("Writting log messages from Python", level="WARN")
+        BuiltIn().log("Writing log messages from Python", level="WARN")
         return False
