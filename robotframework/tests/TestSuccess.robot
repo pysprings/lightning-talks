@@ -22,3 +22,9 @@ Test to see if the response contains 200
     ${response}=    Set Variable    "(200, OK)"
     ${result}=    StringLibrary.Should Contain    200    full_string=${response}    ignore_case=${True}
     Should Be True    ${result}
+
+Test some stuff
+    [Template]    Test two things for equivalency
+    1    1
+    2    2
+    3    3
