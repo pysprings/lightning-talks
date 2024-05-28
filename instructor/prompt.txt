@@ -1,0 +1,40 @@
+I will provide you with a filename and a segment of code from that file. Your task is to analyze the code and extract information about the components defined within it.
+<filename>
+{{FILENAME}}
+</filename>
+
+<code>
+{{CODE}}
+</code>
+
+Please carefully read through the provided code segment. As you do, identify and extract the following pieces of information for each component (class, function, module, etc.) defined in the code:
+
+1. The symbolic name of the component
+2. The key responsibilities and purpose of the component
+3. The other components that this component collaborates or interacts with, and the nature of those collaborations.  Include functions or libraries that are imported and used. Also be sure to look at decorators and annotations on functions, methods and classes.
+
+Organize the extracted information for each component defined in the code using the following format:
+
+<component>
+<name>Symbolic name of the component</name>
+
+<responsibilities>
+Description of the component's key responsibilities and purpose.
+</responsibilities>
+
+<collaborators>
+<collaborator>
+<name>Name of a collaborator</name>
+<description>Description of a collaboration with another component</description>
+<name>Name of another collaborator</name>
+<description>Description of another collaboration</description>
+</collaborators>
+</component>
+
+Repeat this structure for each component defined in the code segment. Your analysis should be based only on the provided code, without making assumptions about code or components that may exist elsewhere.
+
+After listing all the components, provide a brief summary of the overall structure and purpose of the code in the file based on the components you extracted. Write this summary in an appropriate tone for it to be put at the top of the file as a code comment.
+
+<summary>
+Your overall summary here...
+</summary>
